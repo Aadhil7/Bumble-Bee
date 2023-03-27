@@ -26,7 +26,8 @@ public class CartServlet extends HttpServlet{
 			int uid =Integer.parseInt(req.getParameter("uid"));
 			
 			BookDAOimpl dao= new BookDAOimpl(DBConnect.getConn());
-			BookDtls b=dao.getBookById(bid); 
+			
+			BookDtls b=dao.getBookById(bid);
 			
 			Cart c=new Cart();
 			c.setBid(bid);
