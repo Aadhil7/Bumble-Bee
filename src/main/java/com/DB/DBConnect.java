@@ -10,7 +10,7 @@ public class DBConnect {
 	{
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/ebook-app","root","1997731");
+			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/bumble-bee","root","1997731");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
